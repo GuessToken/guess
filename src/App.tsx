@@ -6,7 +6,6 @@ import GuessIcon from './components/GuessIcon';
 
 
 function App() {
-
   // const {
   //   contract_address,
   //   counter_value,
