@@ -1,16 +1,8 @@
 import './App.css'
-import { TonConnectButton } from '@tonconnect/ui-react'
-import { useMainContract } from './hooks/useMainContract'
-import { useTonConnect } from './hooks/useTonConnect';
-import { fromNano } from '@ton/core';
-import WebApp from '@twa-dev/sdk';
 import Box from '@mui/material/Box';
-import BottomNavigation from '@mui/material/BottomNavigation';
-import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-import { Avatar, Button, Card, CardActions, CardContent, Container, Divider, Grid, Grid2, List, ListItem, ListItemAvatar, ListItemButton, ListItemIcon, ListItemText, Paper, Typography } from '@mui/material';
+import { Avatar,Divider, List, ListItem, ListItemAvatar, ListItemButton, ListItemIcon, ListItemText, Typography } from '@mui/material';
 import guess from './assets/guess.png';
 import GuessIcon from './components/GuessIcon';
-import { styled, textAlign } from '@mui/system';
 
 
 function App() {
@@ -31,22 +23,11 @@ function App() {
   // const showAlert = () => {
   //   WebApp.showAlert("Hey there!");
   // }
-const PrizePoolBox = styled(Box)({
-  backgroundColor: 'rgba(128, 0, 128, 0.1)',
-  padding: '16px',
-  borderRadius: '8px',
-  margin: '24px 0',
-  animation: 'fadeIn 2s ease-in-out',
-  '@keyframes fadeIn': {
-    '0%': { opacity: 0 },
-    '100%': { opacity: 1 },
-  },
-});
   const userName = 'Hello, ' + 'Laertes' + '! 🙌';
   const todayGuessWin = '1.3M';
   const totalGuess = '5M';
-  const totalTokensLeft = '2.5M';
-  const totalBetToday = '1.1M';
+  // const totalTokensLeft = '2.5M';
+  // const totalBetToday = '1.1M';
   return (
     <div className='App' >
       <Box textAlign='start'>
