@@ -30,12 +30,12 @@ function App() {
   return (
     <div className='App' >
       <Box textAlign='start'>
-        <List sx={{width: '100%', maxWidth:360}}>
+        <List sx={{width: '100%', maxWidth:360,}}>
           <ListItem alignItems='flex-start'>
             <ListItemAvatar>
               <Avatar src={guess} ></Avatar>
             </ListItemAvatar>
-            <ListItemText primary= {userName} secondary="Welcome back! Ready to guess?">
+            <ListItemText primary= {userName} secondary="Welcome back! Ready to guess?" sx={{ '& .MuiTypography-secondary': {color: 'white'}}}>
               
             </ListItemText>
           </ListItem>
