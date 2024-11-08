@@ -22,7 +22,7 @@ function App() {
   // const showAlert = () => {
   //   WebApp.showAlert("Hey there!");
   // }
-  const userName = 'Hello, ' + 'Laertes' + '! 🙌';
+  const userName = "Hello, " + "Laertes" + "! 🙌";
   const todayGuessWin = '1.3M';
   const totalGuess = '5M';
   // const totalTokensLeft = '2.5M';
@@ -30,7 +30,7 @@ function App() {
   return (
     <div className='App' >
       <Box textAlign='start'>
-        <List sx={{width: '100%', maxWidth:360, bgcolor: 'background.paper'}}>
+        <List sx={{width: '100%', maxWidth:360}}>
           <ListItem alignItems='flex-start'>
             <ListItemAvatar>
               <Avatar src={guess} ></Avatar>
